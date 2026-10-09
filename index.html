@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoLubos – Car Headliner Upholstery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="fade">
+    <div class="lang-switch">
+        <button data-lang="lt">LT</button>
+        <button data-lang="lv">LV</button>
+        <button data-lang="ee">EE</button>
+        <button data-lang="ru">RU</button>
+        <button data-lang="en">EN</button>
+    </div>
+
+    <h1>AutoLubos</h1>
+    <p id="slogan"></p>
+
+    <div class="contacts">
+        <a href="tel:+37062727111">📞 +370 627 27111</a>
+        <a href="https://wa.me/37062727111" target="_blank">🟢 WhatsApp</a>
+    </div>
+</header>
+
+<section class="calculator fade">
+    <h2 id="calcTitle"></h2>
+    <div class="grid">
+        <button data-type="hatchback"></button>
+        <button data-type="sedan"></button>
+        <button data-type="wagon"></button>
+        <button data-type="suv"></button>
+        <button data-type="minivan"></button>
+    </div>
+    <div id="result"></div>
+</section>
+
+<section class="additional-services fade">
+    <h2 id="additionalTitle"></h2>
+    <div class="services-grid">
+        <!-- ПЕРВЫЙ БЛОК - теперь просто заголовок и текст как в других -->
+        <div class="service-item">
+            <h3 id="doorCardsTitle"></h3>
+            <div class="service-content">
+                <div class="service-price-item">
+                    <span class="service-type">Hatchback:</span>
+                    <span class="service-price" id="doorCardsHatchback"></span>
+                </div>
+                <div class="service-price-item">
+                    <span class="service-type">Sedan:</span>
+                    <span class="service-price" id="doorCardsSedan"></span>
+                </div>
+                <div class="service-price-item">
+                    <span class="service-type">Wagon:</span>
+                    <span class="service-price" id="doorCardsWagon"></span>
+                </div>
+                <div class="service-price-item">
+                    <span class="service-type">SUV:</span>
+                    <span class="service-price" id="doorCardsSuv"></span>
+                </div>
+                <div class="service-price-item">
+                    <span class="service-type">Minivan:</span>
+                    <span class="service-price" id="doorCardsMinivan"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ВТОРОЙ БЛОК - Солнцезащитные козырьки -->
+        <div class="service-item">
+            <h3 id="sunVisorsTitle"></h3>
+            <div class="service-content">
+                <p id="sunVisors"></p>
+            </div>
+        </div>
+        
+        <!-- ТРЕТИЙ БЛОК - Все стойки -->
+        <div class="service-item">
+            <h3 id="pillarsTitle"></h3>
+            <div class="service-content">
+                <p id="pillars"></p>
+            </div>
+        </div>
+        
+        <!-- ЧЕТВЕРТЫЙ БЛОК - Ручки потолка -->
+        <div class="service-item">
+            <h3 id="handlesTitle"></h3>
+            <div class="service-content">
+                <p id="handles"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= PANORAMA & SUNROOF REPAIR ================= -->
+<section class="panorama fade" id="panorama">
+    <h2 id="panoramaTitle"></h2>
+    <p class="panorama-intro" id="panoramaIntro"></p>
+
+    <!-- Tabs: типы неисправностей -->
+    <div class="panorama-tabs" id="panoramaTabs">
+        <button class="tab-btn active" data-tab="jam"></button>
+        <button class="tab-btn" data-tab="leak"></button>
+        <button class="tab-btn" data-tab="electric"></button>
+        <button class="tab-btn" data-tab="noise"></button>
+    </div>
+
+    <div class="panorama-tab-content" id="panoramaTabContent"></div>
+
+    <!-- Accordion: этапы работ -->
+    <h3 class="panorama-subtitle" id="panoramaStepsTitle"></h3>
+    <div class="panorama-accordion" id="panoramaAccordion">
+        <div class="acc-item">
+            <button class="acc-header" data-acc="0"></button>
+            <div class="acc-body"><p></p></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-header" data-acc="1"></button>
+            <div class="acc-body"><p></p></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-header" data-acc="2"></button>
+            <div class="acc-body"><p></p></div>
+        </div>
+        <div class="acc-item">
+            <button class="acc-header" data-acc="3"></button>
+            <div class="acc-body"><p></p></div>
+        </div>
+    </div>
+
+    <!-- Prices -->
+    <h3 class="panorama-subtitle" id="panoramaPricesTitle"></h3>
+    <div class="panorama-prices" id="panoramaPrices"></div>
+
+    <!-- CTA -->
+    <div class="panorama-cta">
+        <a href="https://wa.me/37062727111" target="_blank" id="panoramaCta"></a>
+    </div>
+</section>
+
+
+<section class="gallery fade">
+    <h2 id="worksTitle"></h2>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item before">
+            <img src="img/tractor_before.jpg" alt="Tractor headliner before">
+            <span class="badge">BEFORE</span>
+            <p>Tractor </p>
+        </div>
+
+        <div class="gallery-item after">
+            <img src="img/tractor_after.PNG" alt="Tractor headliner after">
+            <span class="badge">AFTER</span>
+            <p>Tractor </p>
+        </div>
+
+        <div class="gallery-item tractor_process">
+            <img src="img/tractor_process.PNG" alt="Tractor process">
+            <span class="badge1">BEFORE</span>
+            <p>Tractor </p>
+        </div>
+
+        <div class="gallery-item tractor_result">
+            <img src="img/tractor_result.jpg" alt="Tractor result">
+            <span class="badge1">AFTER</span>
+            <p>Tractor </p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/golf2_1.jpg" alt="Volkswagen Golf II headliner">
+            <p>Volkswagen Golf II </p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/golf2_2.jpg" alt="Volkswagen Golf II details">
+            <p>Volkswagen Golf II </p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/golf2_3.jpg" alt="Volkswagen Golf II interior">
+            <p>Volkswagen Golf II </p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/bmw_e32.jpg" alt="BMW E32 headliner">
+            <p>BMW E32 </p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/silverado.jpg" alt="Chevrolet Silverado headliner">
+            <p>Chevrolet Silverado </p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/bmw_x5.jpg" alt="BMW X5 E70 headliner">
+            <p>BMW X5 (E70) </p>
+        </div>
+        <div class="gallery-item tesla">
+            <img src="img/tesla.PNG" alt="teslabefore">
+            <span class="badge2">BEFORE</span>
+            <p>Tesla 3</p>
+        </div>
+        <div class="gallery-item tesla_alka">
+            <img src="img/tesla_alka.PNG" alt="teslaafter">
+            <span class="badge2">AFTER</span>
+            <p>Tesla 3</p>
+        </div>
+    </div>
+</section>
+
+<section class="trust fade">
+    <h2 id="whyChooseUs"></h2>
+    <div class="trust-grid">
+        <div>
+            <h3 id="experienceTitle"></h3>
+            <p id="experienceText"></p>
+        </div>
+        <div>
+            <h3 id="materialsTitle"></h3>
+            <p id="materialsText"></p>
+        </div>
+        <div>
+            <h3 id="warrantyTitle"></h3>
+            <p id="warrantyText"></p>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/37062727111" class="wa-float" target="_blank">
+    💬 WhatsApp
+</a>
+
+<footer id="footerText"></footer>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" alt="Enlarged view">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
